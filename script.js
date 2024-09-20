@@ -1,4 +1,4 @@
-// splitText라는 이름으로 함수 선언 이 때 파라미터로 elem, tag, interval 연결 , tag와 interval에는 전달되는 인수값이 없을 때 spanm 0값을 디폴트로 설정
+// splitText라는 이름으로 함수 선언 이 때 파라미터로 elem, tag, interval 연결 , tag와 interval에는 전달되는 인수값이 없을 때 span, 0값을 디폴트로 설정
 function splitText(elem, tag = "span", interval = 0) {
     // 이때 만약 제일 중요한 인수값은 elem값이 없으면 코드가 어차피 정상적으로 동작이 안될 터이므로
     if(!elem) {
@@ -24,7 +24,7 @@ function splitText(elem, tag = "span", interval = 0) {
     // counter라는 변수에는 앞으로 반복문을 통해 카운터 증가 값을 담을 초기 변수(앞으로 값을 담을 빈 그릇)
     let counter = 0;
 
-    // 위에서 값을 담을 초기변수를 ㅜㄴ비했으니
+    // 위에서 값을 담을 초기변수를 준비했으니
     // 아래 for of 반복으로 반복처리 (for of는 문자열을 반복돌릴 때 사용)
     // el_text에 있는 전체 문자열이 자동으로 반복돌면서 아래 코드 블록 안에 letter라는 변수로 글자 하나씩 반복처리됨
     for (let letter of el_text) {
